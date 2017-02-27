@@ -6,7 +6,7 @@ fn main() {
 
     let mut y: i32;
 
-    y = 6;
+    let x = (y = 6);  // `x` has the value `()`, not `6`.
 
     let (a, b) = (1, 2);
 
