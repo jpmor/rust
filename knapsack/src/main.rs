@@ -1,3 +1,5 @@
+// Implementation of Algorithm to solve Knapsack Problems with Dynamic Programming
+
 use std::cmp::Ordering;
 
 fn main() {
@@ -11,10 +13,6 @@ fn main() {
     println!("Budget is: {}", budget);
     println!("Optimal choice vector is: {:?}", knapsack(weight, utility, budget));
 }
-
-// Implementation of Algorithm to solve Knapsack Problems with Dynamic Programming
-//
-// Args: Weight Vector, Utility Vector, Budget Contraint
 
 fn knapsack(weight: Vec<usize>, utility: Vec<usize>, budget: usize) -> Vec<usize> {
 
