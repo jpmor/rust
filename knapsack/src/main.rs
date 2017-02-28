@@ -35,7 +35,7 @@ fn knapsack(weight: Vec<usize>, utility: Vec<usize>, budget: usize) -> Vec<usize
                                                         //      Value = exactly the item utility
                 Ordering::Equal   => value[item] = utility[item],
                                                         // If Remaining Budget < Weight:
-                                                        //      Insuffiecient budget remains, item can't add value
+                                                        //      Insufficient budget remains, item can't add value
                 Ordering::Less    => value[item] = 0
             }
         }
